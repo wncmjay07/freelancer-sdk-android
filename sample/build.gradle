@@ -33,8 +33,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
-    implementation project(':freelancer-sdk')
+//    implementation project(':freelancer-sdk')
     implementation dependencies.rxAndroid
     implementation dependencies.rxJava
     implementation dependencies.rxKotlin
+    compile(group: 'com.freelancer', name: 'sdk', version: '0.1.0', ext: 'aar', classifier: '')
 }
